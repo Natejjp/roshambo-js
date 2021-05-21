@@ -16,16 +16,14 @@ h1 {
   justify-content: center;
 }
 
-main {
-  display: flex;
-  justify-content: space-between;
-}
-
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin: 1rem;
 }
 article {
   display: flex;
@@ -34,4 +32,15 @@ article {
 
 div {
   text-align: center;
+}
+
+.buttonOne {
+  font-size: 25px;
+}
+
+@media all and (min-width: 1000px) {
+  main div {
+    display: flex;
+    justify-content: space-around;
+  }
 }
