@@ -6,6 +6,7 @@ function updateSelectionRockOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
   selectionOne.textContent = 'rock'
   playerChoiceOne = 'rock'
+  playerChoiceOne = 'rock'
 }
 
 document
@@ -15,6 +16,7 @@ document
 function updateSelectionPaperOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
   selectionOne.textContent = 'paper'
+  playerChoiceOne = paper
 }
 
 document
@@ -24,6 +26,7 @@ document
 function updateSelectionScissorsOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
   selectionOne.textContent = 'scissors'
+  playerChoiceOne = 'scissors'
 }
 
 document
@@ -33,6 +36,7 @@ document
 function updateSelectionRockTwo(event) {
   const selectionTwo = document.querySelector('.choiceTwo')
   selectionTwo.textContent = 'rock'
+  playerChoiceTwo = 'rock'
 }
 
 document
@@ -42,6 +46,7 @@ document
 function updateSelectionPaperTwo(event) {
   const selectionTwo = document.querySelector('.choiceTwo')
   selectionTwo.textContent = 'paper'
+  playerChoiceTwo = 'paper'
 }
 
 document
@@ -58,15 +63,23 @@ document
   .querySelector('.scissorsTwo')
   .addEventListener('click', updateSelectionScissorsTwo)
 
-function finalOne(event) {
-  if (
+function final(event) {
+  if (playerChoiceOne === playerChoiceTwo) {
+    window.alert('draw')
+  } else if (
     (playerChoiceOne === 'rock' && playerChoiceTwo === 'scissors') ||
     (playerChoiceOne === 'paper' && playerChoiceTwo === 'rock') ||
     (playerChoiceOne === 'scissors' && playerChoiceTwo === 'paper')
   ) {
     window.alert('player one won')
+  } else if (
+    (playerChoiceTwo === 'rock' && playerChoiceOne === 'scissors') ||
+    (playerChoiceTwo === 'paper' && playerChoiceOne === 'rock') ||
+    (playerChoiceTwo === 'scissors' && playerChoiceOne === 'paper')
+  ) {
+    window.alert('player two won')
   }
 }
-document.querySelector('.buttonOne').addEventListener('click', finalOne)
+document.querySelector('.buttonOne').addEventListener('click', final)
 
 document.addEventListener('DOMContentLoaded', main)
