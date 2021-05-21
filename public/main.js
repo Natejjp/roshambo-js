@@ -102,6 +102,7 @@ function updateSelectionLizardTwo(event) {
 document
   .querySelector('.lizardTwo')
   .addEventListener('click', updateSelectionLizardTwo)
+
 function final(event) {
   if (playerChoiceOne === playerChoiceTwo) {
     window.alert('draw')
