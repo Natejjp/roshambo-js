@@ -4,8 +4,7 @@ let playerChoiceOne = ''
 let playerChoiceTwo = ''
 function updateSelectionRockOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
-  selectionOne.textContent = 'rock'
-  playerChoiceOne = 'rock'
+  selectionOne.textContent = 'Rock'
   playerChoiceOne = 'rock'
 }
 
@@ -15,7 +14,7 @@ document
 
 function updateSelectionPaperOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
-  selectionOne.textContent = 'paper'
+  selectionOne.textContent = 'Paper'
   playerChoiceOne = 'paper'
 }
 
@@ -25,7 +24,7 @@ document
 
 function updateSelectionScissorsOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
-  selectionOne.textContent = 'scissors'
+  selectionOne.textContent = 'Scissors'
   playerChoiceOne = 'scissors'
 }
 
@@ -35,7 +34,7 @@ document
 
 function updateSelectionSpockOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
-  selectionOne.textContent = 'spock'
+  selectionOne.textContent = 'Spock'
   playerChoiceOne = 'spock'
 }
 
@@ -45,7 +44,7 @@ document
 
 function updateSelectionLizardOne(event) {
   const selectionOne = document.querySelector('.choiceOne')
-  selectionOne.textContent = 'lizard'
+  selectionOne.textContent = 'Lizard'
   playerChoiceOne = 'lizard'
 }
 
@@ -55,7 +54,7 @@ document
 
 function updateSelectionRockTwo(event) {
   const selectionTwo = document.querySelector('.choiceTwo')
-  selectionTwo.textContent = 'rock'
+  selectionTwo.textContent = 'Rock'
   playerChoiceTwo = 'rock'
 }
 
@@ -65,7 +64,7 @@ document
 
 function updateSelectionPaperTwo(event) {
   const selectionTwo = document.querySelector('.choiceTwo')
-  selectionTwo.textContent = 'paper'
+  selectionTwo.textContent = 'Paper'
   playerChoiceTwo = 'paper'
 }
 
@@ -75,7 +74,7 @@ document
 
 function updateSelectionScissorsTwo(event) {
   const selectionTwo = document.querySelector('.choiceTwo')
-  selectionTwo.textContent = 'scissors'
+  selectionTwo.textContent = 'Scissors'
   playerChoiceTwo = 'scissors'
 }
 
@@ -85,7 +84,7 @@ document
 
 function updateSelectionSpockTwo(event) {
   const selectionTwo = document.querySelector('.choiceTwo')
-  selectionTwo.textContent = 'spock'
+  selectionTwo.textContent = 'Spock'
   playerChoiceTwo = 'spock'
 }
 
@@ -95,7 +94,7 @@ document
 
 function updateSelectionLizardTwo(event) {
   const selectionTwo = document.querySelector('.choiceTwo')
-  selectionTwo.textContent = 'lizard'
+  selectionTwo.textContent = 'Lizard'
   playerChoiceTwo = 'lizard'
 }
 
@@ -118,9 +117,9 @@ function final(event) {
     (playerChoiceOne === 'lizard' && playerChoiceTwo === 'spock') ||
     (playerChoiceOne === 'lizard' && playerChoiceTwo === 'paper')
   ) {
-    window.alert('player one won')
+    window.alert('player one wins')
   } else {
-    window.alert('player two won')
+    window.alert('player two wins')
   }
 }
 document.querySelector('.buttonOne').addEventListener('click', final)
